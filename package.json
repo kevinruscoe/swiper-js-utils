@@ -1,0 +1,16 @@
+{
+  "name": "swiper-js-utils",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinruscoe/tailwind-css-vars-exporter.git"
+  },
+  "author": {
+    "name": "Kevin Ruscoe"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "swiper": "^11.1.4"
+  }
+}
