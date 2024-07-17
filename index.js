@@ -47,6 +47,7 @@ export function BreakpointDestroy({ on }) {
         swiper.slides = Array.from(swiper.wrapper.children);
         if (breakpointParams.destroy) {
             swiper.hostEl.classList.remove('swiper');
+            swiper.hostEl.classList.add('swiper-destroyed');
             swiper.wrapper.removeAttribute('style');
             swiper.slides.forEach((slide) => {
                 slide.classList.remove('swiper-slide');
@@ -55,6 +56,7 @@ export function BreakpointDestroy({ on }) {
             swiper.disable();
         } else {
             swiper.hostEl.classList.add('swiper');
+            swiper.hostEl.classList.remove('swiper-destroyed');
             swiper.slides.forEach((slide) => {
                 slide.classList.add('swiper-slide');
             })
